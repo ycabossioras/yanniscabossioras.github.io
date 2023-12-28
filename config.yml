@@ -1,5 +1,5 @@
-baseURL: "https://yannis.cabossioras.github.io" 
-title: Prof. Name
+baseURL: "https://yanniscabossioras.github.io/"
+title: Yannis Cabossioras
 paginate: 20
 theme: PaperMod
 
@@ -11,26 +11,84 @@ taxonomies:
 
 menu:
     main:
-        - name: Papers
-          url: papers/
+        - name: CV
+          url: cv/
           weight: 1
-        - name: Courses
-          url: courses/
+        - name: Research
+          url: papers/
           weight: 2
-        - name: Data
-          url: data/
-          weight: 3 
-        - name: Newsletter
-          url: https://yannis.cabossioras.github.io
-          weight: 4
+        - name: Contact
+          url: contact
+          weight: 3
 
 params:
-    description: "I am a Professor of Subject at the University of Place. My research covers various topics.
-consequat."
-    author: Name
-    # googleAnalyticsID: "G-XXXXX"
+    description: "Yannis Cabossioras homepage. I am a Ph.D. candidate in Finance at NYU Stern, on the job market in 2024-2025. My topics are banking and industrial organization."
+    author: Yannis Cabossioras
+    googleAnalyticsID: "G-EHF6G800W0"
+    
+    profileMode:
+          enabled: true
+          title: Yannis Cabossioras
+          subtitle: >
+            
+            Welcome! I am a Ph.D. candidate in Finance at NYU Stern, on the job market in 2024-2025.
+
+
+            I am specialized in banking and industrial organization.
+
+
+            <br/>
+
+
+            [yannis.cabossioras@stern.nyu.edu](mailto:yannis.cabossioras@stern.nyu.edu)
+
+          imageUrl: "Professional_square.jpeg"
+          imageWidth: 160
+          imageHeight: 160
+          imageTitle: Yannis Cabossioras
+
+          buttons:
+            - name: CV
+              url: cv/
+            - name: Research
+              url: papers/
+            - name: Contact
+              url: contact
+            # - name: Tags
+            #   url: tags/
+            # - name: Archive
+            #   url: archive/
+    
+    mainSections:
+        - papers/
+
+    socialIcons:
+        - name: Linkedin
+          url: https://www.linkedin.com/in/ycabossioras/
+        - name: GitHub
+          url: https://github.com/ycabossioras
+        - name: Twitter
+          url: https://twitter.com/YCabossioras
+        - name: Zoom
+          url: https://nyu.zoom.us/my/ycabossioras
+        # - name: Location
+        #   url: location/
+        # - name: Contact
+        #   url: officehours/
+        # - name: Google Scholar
+        #   url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+        # - name: YouTube
+        #   url: https://www.youtube.com/@pmichaillat
+        # - name: Substack
+        #   url: https://pmichaillat.substack.com
+        
+    label:
+      text: "Yannis Cabossioras"
+      icon: favicon.ico
+      iconHeight: 28
+
     DateFormat: "January 2006"
-    defaultTheme: light
+    defaultTheme: auto  # dark light auto
     hideFooter: false
     disableThemeToggle: true
     ShowShareButtons: false
@@ -48,57 +106,13 @@ consequat."
     UseHugoToc: true
     comments: false
     math: true
-    profileMode:
-          enabled: true
-          title: Prof. Namely Name
-          subtitle: "I am a Professor of Subject at the University of Place. I work on various topics. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
-          imageUrl: "picture.jpeg"
-          imageWidth: 160
-          imageHeight: 160
-          imageTitle: Prof. Name
-          buttons:
-            - name: Papers
-              url: papers/
-            - name: Courses
-              url: courses/
-            - name: Data
-              url: data/
-            - name: Newsletter
-              url: https://pmichaillat.substack.com
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-    socialIcons:
-        - name: CV
-          url: cv.pdf
-        - name: Email
-          url: mailto:pascal.michaillat@gmail.com
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: Twitter
-          url: https://twitter.com/pmichaillat
-
+    
     assets:
         disableHLJS: true
         disableScrollBarStyle: true
     cover:
         hiddenInList: false
         hiddenInSingle: true
-    label:
-      text: "Prof. Name"
-      icon: favicon.ico
-      iconHeight: 18
 
 markup:
     goldmark:
@@ -111,3 +125,9 @@ markup:
         endLevel: 2
         ordered: false
         startLevel: 2
+
+module:
+  imports:
+  - path: github.com/hugomods/google-analytics
+  - path: github.com/hugomods/icons/vendors/font-awesome
+  - path: github.com/hugomods/katex
